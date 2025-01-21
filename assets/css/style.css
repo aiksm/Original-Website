@@ -1,0 +1,107 @@
+
+
+h1, 
+h2 {
+    color: red;
+    font-size: 50px;
+}
+
+#boxes{
+    /* width: 100vw;
+    height: 100vh; */
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+}
+
+.box1 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.box3 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.box4 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.box5 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.box6 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.box7 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.box8 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.SNS_icons {
+    color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    padding: 0;
+    
+}
+
+
+
+
+/*
+layout
+タグのcss  
+*/
+
+/* 
+header
+ */
+
+
+/* 
+main
+ */
+
+
+/* 
+section
+ */
+
+/* 
+footer
+*/
