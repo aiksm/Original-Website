@@ -5,64 +5,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>豊栄ファーマーズマーケット</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
   </head>
 
   <body>
-    <header id="title">
-      豊栄ファーマーズ
-      <div>マーケット</div>
-    </header>
-
-    <ul id="menu">
-      <li><a href="">HOME</a></li>
-      <li><a href="">ファームについて</a></li>
-      <li><a href="">生産者の紹介</a></li>
-      <li><a href="">新着野菜情報</a></li>
-      <li><a href="">店舗情報</a></li>
-    </ul>
-
-    <section>
-      <div>
-        <h1>information</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias rem
-          veniam quibusdam. Culpa nesciunt vero officia iste, tempora eius, qui
-          illo repellat quibusdam amet totam perferendis quam porro eligendi
-          vel.
-        </p>
-      </div>
-    </section>
-
-  <section>
-      <div>
-        <h2>旬の野菜</h2>
-          <ul id="boxes">
-            <div class="box1"><img src="./assets/img/pexels-emma-jones-259946-793266.jpg" alt="" class="image" /></div>
-            <div class="box2"><img src="./assets/img/pexels-emma-jones-259946-793266.jpg" alt="" class="image" /></div>
-            <div class="box3"><img src="./assets/img/pexels-emma-jones-259946-793266.jpg" alt="" class="image" /></div>
-            <div class="box4"><img src="./assets/img/pexels-emma-jones-259946-793266.jpg" alt="" class="image" /></div>
-
-            <div class="box5"><img src="./assets/img/pexels-emma-jones-259946-793266.jpg" alt="" class="image" /></div>
-            <div class="box6"><img src="./assets/img/pexels-emma-jones-259946-793266.jpg" alt="" class="image" /></div>
-            <div class="box7"><img src="./assets/img/pexels-emma-jones-259946-793266.jpg" alt="" class="image" /></div>
-            <div class="box8"><img src="./assets/img/pexels-emma-jones-259946-793266.jpg" alt="" class="image" /></div>
+    <div class="mainwrapper">
+      <div class="container">
+        <nav id="menu">
+          <div class="Top-Logo">
+            <img
+              src="./assets/img/Toyosakafarmers.webp"
+              alt="豊栄ファーマーズマーケット"
+            />
+          </div>
+          <ul>
+            <li><a href="./index.html" class="nav-link">HOME</a></li>
+            <li>
+              <a href="./section2.html" class="nav-link">ファームとは </a>
+            </li>
+            <li><a href="./section3.html" class="nav-link">生産者の紹介</a></li>
+            <li><a href="./section4.html" class="nav-link">新着野菜情報</a></li>
+            <li><a href="./section5.html" class="nav-link">店舗情報</a></li>
           </ul>
+        </nav>
 
+        <header class="headerMobile">
+          <div class="header-container">
+            <h1 class="header-logo">
+              <img src="./assets/img/Toyosakafarmers.webp"  alt=""   class="imgMobile"></img>
+            </h1>
+            
+            <button type="button" class="humburger">
+              <span></span>
+            </button>
+            <nav class="nav">
+              <ul class="menuBar">
+                <li class="nav__item"><a href="./index.html" class="navLink">HOME</a></li>
+                <li class="nav__item">
+                  <a href="./section2.html" class="navLink">ファームとは</a>
+                </li>
+                <li class="nav__item">
+                  <a href="./section3.html" class="navLink">生産者の紹介</a>
+                </li>
+                <li class="nav__item">
+                  <a href="./section4.html" class="navLink">新着野菜情報</a>
+                </li >
+                <li class="nav__item"><a href="./section5.html" class="nav-link">店舗情報</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        
+        <div class="slideshow-container">
+          <ul class="slideshow-slide">
+            <li>
+              <img
+                src="./assets/img/aspara.jpg"
+                alt="スライドショー画像1"
+              />
+            </li>
+            <li>
+              <img
+                src="./assets/img/markettest2.jpg"
+                alt="スライドショー画像2"
+              />
+            </li>
+            <li>
+              <img
+                src="./assets/img/markettest3.jpg"
+                alt="スライドショー画像3"
+              />
+            </li>
+            <li>
+              <img
+                src="./assets/img/beats.jpg"
+                alt="スライドショー画像4"
+              />
+            </li>
+          </ul>
+        </div>
       </div>
-    </section>
 
-    <footer>
+      <main>
+        <section class="newsBox">
+          <h1>
+            INFORMATION
+            <div></div>
+            お知らせ
+          </h1>
 
-      <ul class="logo"><img src="" alt=""></ul>
-      <div class="SNS_icons">
-        <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
-        <a href="#"><i class="fab fa-facebook fa-3x"></i></a>
-        <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
+          <ul>
+            <li class="info"></li>
+            <a href="#"></a>
+            <div class="newsTxt">
+              <data class="bold">2025.01.23</data>
+              <p class="bold">臨時休業のお知らせ</p>
+              <p>...</p>
+            </div>
+
+            <li class="info"></li>
+            <a href="#"></a>
+            <div class="newsTxt">
+              <data class="bold">2025.01.01</data>
+              <p class="bold">年始の営業時間のご案内</p>
+              <p>...</p>
+            </div>
+
+            <li class="info"></li>
+            <a href="#"></a>
+            <div class="newsTxt">
+              <data class="bold">2025.01.01</data>
+              <p class="bold">新年のご挨拶</p>
+              <p>....</p>
+            </div>
+          </ul>
+        </section>
+
+        <section class="vegeInfo">
+          <div>
+            <h2>旬の野菜</h2>
+            <br />
+            <ul id="boxes">
+              <div class="box1">
+                <img src="./assets/img/tomato.jpg" alt="" class="image" />
+              </div>
+              <div class="box2">
+                <img src="./assets/img/onion.jpg" alt="" class="image" />
+              </div>
+              <div class="box3">
+                <img src="./assets/img/carrots.jpg" alt="" class="image" />
+              </div>
+              <div class="box4">
+                <img src="./assets/img/mushroom.jpg" alt="" class="image" />
+              </div>
+
+              <div class="box5">
+                <img src="./assets/img/avocado.jpg" alt="" class="image" />
+              </div>
+              <div class="box6">
+                <img src="./assets/img/strawberry.jpg" alt="" class="image" />
+              </div>
+              <div class="box7">
+                <img src="./assets/img/capsicum.jpg" alt="" class="image" />
+              </div>
+              <div class="box8">
+                <img src="./assets/img/cherry.jpg" alt="" class="image" />
+              </div>
+              <div class="box9">
+                <img src="./assets/img/grapes.jpg" alt="" class="image" />
+              </div>
+            </ul>
+          </div>
+        </section>
+      </main>
     </div>
-    
-  </footer>
-
+    <footer class="footer">
+      <ul class="logo">
+        <img
+          src="./assets/img/toyosakalogo.jpg"
+          alt="豊栄ファーマーズマーケット"
+        />
+      </ul>
+      <div class="SNS_icons">
+        <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+      </div>
+    </footer>
   </body>
+  <script src="./assets/js/script.js"></script>
 </html>

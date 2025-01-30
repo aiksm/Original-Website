@@ -1,0 +1,20 @@
+.mainwrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.Calender h1{
+    font-family: fantasy;
+    font-size: 30px;
+    color: brown;
+    margin: 10% 0 0 10%;
+}
+
+
+.vegecalender img{
+    width: 600px;
+    height: 800px;
+    margin: 5% 0 0 10%;
+    border: 2px double orange;
+    border-radius: 10%;
+}

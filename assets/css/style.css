@@ -1,107 +1,623 @@
-
-
-h1, 
-h2 {
-    color: red;
-    font-size: 50px;
+.mainwrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+@media screen and (max-width: 780px) {
+    .mainwrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
-#boxes{
-    /* width: 100vw;
-    height: 100vh; */
-
+/* Menu bar */
+#menu {
+    width: 16vw;
+    margin: 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; 
     display: flex;
-    flex-wrap: wrap;
-    margin-left: -20px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 780px){
+    #menu {
+        display: none;
+    }
+}
+   
+
+/* still working on it  */
+/* header & Menu bar for Mobile */
+@media screen and (min-width: 780px){
+    .headerMobile {
+        display:none;
+}}
+
+
+@media screen and (max-width: 780px){
+    
+.headerMobile {
+    /* width: 100%;
+    height: 5%;
+    background-color: beige;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; */
+
+    height: 80px;
+    background-color: beige;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header-container{
+    max-width: 100%;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    height: inherit;
+    color: #fff;
+    padding: 0 50px;
+    margin-right: auto;
+    margin-left: auto;
+}  
+.header-logo { 
+    width: 40px;
+    height: 40px;
+
+}  
+.header-logo img{
+    width: 100%;
+    height: 100%;
+}  
+.humburger {
+    width: 50px;
+    height: 80px;
+    position: relative;
+    appearance: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    cursor: pointer;
+}
+  
+  .humburger span {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.5s;
+}
+.humburger span,
+.humburger span::before,
+.humburger span::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.5s;
 }
 
+.humburger span::before {
+  top: 10px;
+}
+
+.humburger span::after {
+  bottom: 10px;
+}
+.nav {
+    position: fixed;
+    width: 60%;
+    height: 100vh;
+    top: 80px;
+    background-color: black;
+    padding: 50px 0;
+    transition: all 0.5s;
+    border-top: #fff 1px solid;
+    right: -100%;
+  }
+  
+  .nav__item a {
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 0 20px 50px;
+    text-transform: uppercase;
+  }
+  
+  .nav__item a:hover {
+    background-color: #fff;
+    color: black;
+}
+.nav.open {
+    right: 0; 
+}
+.humburger.open span {
+    background-color: transparent;
+  }
+  
+  .humburger.open span::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  
+  .humburger.open span::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+  }
+
+}
+
+
+
+
+/* ↑試し中 */
+
+
+@media screen and (max-width: 780px) {
+    #menu {
+        display: none;
+    }
+}
+
+/* @media screen and (max-width: 780px) {
+    .menuBar {
+        
+    }
+} */
+
+.Top-Logo img{
+    width: 160px;
+    height: 160px;
+    border-radius: 20%;
+    margin: 0 0 10% 15%;
+}
+
+#menu li {
+    list-style: none;
+    font-size: 12px;
+    font-family: monospace;
+    text-align: center;
+    margin: 8%;
+    padding: 0;
+    position: relative;
+    padding: 0.3rem 1.5rem 1.5rem 3rem;
+    border-radius: 50%;
+    background-color: beige;
+    box-shadow: 1rem -1.5rem beige;
+}
+
+@media screen and (max-width: 780px) {
+    #menu li {
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        background-color: none;
+        box-shadow: none;
+        display: flex;
+    }
+}
+
+.nav-link {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: azure;
+    transform: scale(1.1);
+}
+
+/* Slide Show */
+.slideshow-container {
+    width: 700px;
+    height: 500px;
+    margin-top: 10%;
+    /* max-width: 780px;
+    max-height: 500px; */
+    overflow: hidden;
+    border: 2px solid beige;
+    border-radius: 60% 60% 50% 60% ;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* z-index: 1; */
+    margin-left: 20%;
+}
+
+@media screen and (max-width: 780px) {
+    .slideshow-container {
+        width: 780px;
+        height: 30%;
+        border-radius: 0 0 0 0;
+        border: none;
+        margin: 10% 0 0 0;
+        z-index: -1;
+
+    }
+}
+
+.slideshow-slide {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slideshow-slide li {
+    min-width: 100%;
+    height: 100%;
+}
+
+.slideshow-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* @media screen and (max-width: 780px) {
+    .slideshow-container {
+        width: 80vh;
+        height: 50vh;
+        top: 10%;
+        right: 10%;
+    }
+    
+} */
+/* @media screen and (max-width:780px) {
+    .slideshow-container {
+        width: 95vw;
+        height: 60vw;
+        top: 15%;
+        right: 5%;
+    }
+    
+} */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 780px) {
+    .container {
+        width: 100%;
+
+    }
+}
+
+/* お知らせ  Information */
+.newsBox {
+    margin: 20%;
+    padding: 0;    
+}
+@media screen and (max-width: 780px) {
+    .newsBox{
+        margin: 20%;
+    }
+}
+
+.newsBox h1 {
+    color: brown;
+    font-size: 30px;
+    font-family: fantasy;
+}
+@media screen and (max-width: 780px) {
+    .newsBox h1{
+        font-size: 15px;
+        padding-bottom: 10%;
+    }
+}
+.info {
+    list-style: none;
+}
+
+.newsTxt {
+    margin: 5% 5% 0 0;
+}
+@media screen and (max-width: 780px) {
+    .newsTxt {
+        font-size: 8px;
+    }
+}
+
+
+.newsTxt:hover {
+    color: gray;
+    transform: all 0.3 ease
+}
+
+/* 旬の野菜 */
+.vegeInfo h2 {
+    font-family: fantasy;
+    font-size: 30px;
+    color: brown;
+    margin: 20% 20% 5% 20% ;
+    padding: 0;
+}
+@media screen and (max-width: 780px){
+    .vegeInfo h2 {
+        font-size: 15px;
+        margin: 0 0 0 20%;
+    }
+}
+
+
+#boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0% 20% 20% 20%;
+    gap: 40px;
+}
+@media screen and (max-width: 780px) {
+    #boxes {
+        margin: 0 20% 20% 20%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
 .image {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
 }
 
 .box1 {
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    border: 2px solid beige;
+    border-radius: 20%;
+    aspect-ratio: 16 / 9;
+    transition: all 1s;
+    transform: translateY(200px);
+    transition: all 1s;
+    transform: translateY(200px);
+    opacity: 0;
+    visibility: hidden;
+}
+@media screen and (max-width: 780px){
+    .box1 {
+        width: 100px;
+        height: 100px;
+    }
 }
 
+
 .box2 {
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    border: 2px solid beige;
+    border-radius: 20%;
+    aspect-ratio: 16 / 9;
+    transition: all 1s;
+    transform: translateY(200px);
+    transition: all 1s;
+    transform: translateY(200px);
+    opacity: 0;
+    visibility: hidden;
+}
+@media screen and (max-width: 780px){
+    .box2 {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 .box3 {
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    border: 2px solid beige;
+    border-radius: 20%;
+    aspect-ratio: 16 / 9;
+    transition: all 1s;
+    transform: translateY(200px);
+    transition: all 1s;
+    transform: translateY(200px);
+    opacity: 0;
+    visibility: hidden;
+}
+@media screen and (max-width: 780px){
+    .box3 {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 .box4 {
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    border: 2px solid beige;
+    border-radius: 20%;
+    aspect-ratio: 16 / 9;
+    transition: all 1s;
+    transform: translateY(200px);
+    transition: all 1s;
+    transform: translateY(200px);
+    opacity: 0;
+    visibility: hidden;
+}
+@media screen and (max-width: 780px){
+    .box4 {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 .box5 {
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    border: 2px solid beige;
+    border-radius: 20%;
+    aspect-ratio: 16 / 9;
+    transition: all 1s;
+    transform: translateY(200px);
+    transition: all 1s;
+    transform: translateY(200px);
+    opacity: 0;
+    visibility: hidden;
+}
+@media screen and (max-width: 780px){
+    .box5 {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 .box6 {
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    border: 2px solid beige;
+    border-radius: 20%;
+    aspect-ratio: 16 / 9;
+    transition: all 1s;
+    transform: translateY(200px);
+    transition: all 1s;
+    transform: translateY(200px);
+    opacity: 0;
+    visibility: hidden;
+}
+@media screen and (max-width: 780px){
+    .box6 {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 .box7 {
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    border: 2px solid beige;
+    border-radius: 20%;
+    aspect-ratio: 16 / 9;
+    transition: all 1s;
+    transform: translateY(200px);
+    transition: all 1s;
+    transform: translateY(200px);
+    opacity: 0;
+    visibility: hidden;
+}
+@media screen and (max-width: 780px){
+    .box7 {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 .box8 {
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    border: 2px solid beige;
+    border-radius: 20%;
+    aspect-ratio: 16 / 9;
+    transition: all 1s;
+    transform: translateY(200px);
+    transition: all 1s;
+    transform: translateY(200px);
+    opacity: 0;
+    visibility: hidden;
 }
+@media screen and (max-width: 780px){
+    .box8 {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.box9 {
+    width: 150px;
+    height: 150px;
+    border: 2px solid beige;
+    border-radius: 20%;
+    aspect-ratio: 16 / 9;
+    transition: all 1s;
+    transform: translateY(200px);
+    transition: all 1s;
+    transform: translateY(200px);
+    opacity: 0;
+    visibility: hidden;
+}
+@media screen and (max-width: 780px){
+    .box9 {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.is-active {
+    opacity: 1; /* 要素を表示させる */
+    visibility: visible;
+    transform: translateY(0); /* 元の位置に戻す */
+}
+
+/* Footer */
+
+@media screen and (max-width: 780px){
+  .footer {
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+}}
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-top: 0%;
+}
+
 
 .SNS_icons {
     color: black;
     display: flex;
     justify-content: center;
-    text-align: center;
     margin: 20px;
-    padding: 0;
-    
+    padding: 0;   
+}
+
+@media screen and (max-width: 780px){
+    .SNS_icons {
+        margin: 5px;
+        padding: 0;
+    }
+}
+
+.logo img { 
+    width: 10%;
+    height: 10%;
+}
+
+.SNS_icons a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.SNS_icons a:hover {
+    color: #007bff;
 }
 
 
-
-
-/*
-layout
-タグのcss  
-*/
-
-/* 
-header
- */
-
-
-/* 
-main
- */
-
-
-/* 
-section
- */
-
-/* 
-footer
-*/

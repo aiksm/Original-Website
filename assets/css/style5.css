@@ -1,0 +1,71 @@
+.mainwrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+
+.store-info h1 {
+  font-family: fantasy;
+  font-size: 35px;
+  color: brown;
+  margin-top: 10%;
+}
+.store-info h2 {
+  font-family: fantasy;
+  font-size: 25px;
+  color: brown;
+  margin-top: 30px;
+}
+
+.maps {
+  width: 450px;
+  height: 300px;
+  border: 1px solid ;
+  position: relative;
+  margin: 60px;
+}
+
+.market-Img {
+  width: 450px;
+  height: 300px;
+  position: absolute;
+  top: 70%;
+  margin: 60px;
+}
+.market-Img img {
+  width: 100%;
+  height: 100%;
+}
+
+.market-Img2 {
+  width: 450px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  margin: 60px;
+}
+.market-Img2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.store-img {
+  display: flex;
+}
+
+.store-information table {
+  border: rgb(86, 85, 85) 1px solid;
+  position: absolute; 
+  top: 80%;
+  left: 60%;
+}
+
+tr, 
+tbody, 
+th {
+  border: rgb(86, 85, 85) 1px solid !important;
+}
+
+.store-information th{
+  color: rgb(68, 68, 191);
+}

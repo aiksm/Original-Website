@@ -1,0 +1,134 @@
+.mainwrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.container h1 {
+    font-family: fantasy;
+    font-size: 30px;
+    color: brown;
+    margin-top: 20%;
+}
+
+.marketDetail h2 {
+    font-family: fantasy;
+    font-size: 30px;
+    color: brown;
+    margin: 0 0 10px 50px;
+}
+.marketDetail p {
+    font-family: fantasy;
+    margin: 30px 0 30px 70px;
+    font-size: 18px;
+}
+
+#vegePhoto {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 10%;
+}
+
+#vegePhoto img {
+    width: 100%;
+    height: 100%;
+}
+
+.Box1 {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.Box2 {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.Box3 {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.Box4 {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.Box5 {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+
+.Toyosaka h3 {
+    font-family: fantasy;
+    font-size: 30px;
+    color: brown;
+    margin: 20px 0;
+}
+.Toyosaka p {
+    font-family: fantasy;
+    font-size: 18px;
+    line-height: 1.4;
+    
+}
+
+.toyosakaMap img{
+    height: 500px;
+    width: 370px;;
+    border-radius: 20%;
+}
+
+.toyosakaMap {
+    margin: 30px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 30%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-top: 0%;
+
+}
+
+
+.SNS_icons {
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 0;   
+}
+
+.logo img { 
+    width: 10%;
+    height: 10%;
+}
+
+.SNS_icons a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.SNS_icons a:hover {
+    color: #007bff;
+}
+
+
+
+
