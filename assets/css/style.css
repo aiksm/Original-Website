@@ -49,7 +49,7 @@
     left: 0;
     right: 0; */
 
-    height: 80px;
+    height: 44px;
     background-color: beige;
     position: fixed;
     top: 0;
@@ -62,7 +62,7 @@
     justify-content: space-between;
     align-items: center;
     height: inherit;
-    color: #fff;
+    color: brown;
     padding: 0 50px;
     margin-right: auto;
     margin-left: auto;
@@ -70,6 +70,7 @@
 .header-logo { 
     width: 40px;
     height: 40px;
+    margin-left: -40px;
 
 }  
 .header-logo img{
@@ -77,14 +78,14 @@
     height: 100%;
 }  
 .humburger {
-    width: 50px;
-    height: 80px;
+    width: 40px;
+    height: 40px;
     position: relative;
     appearance: none;
     border: 0;
     padding: 0;
-    margin: 0;
-    background-color: black;
+    margin: -40px;
+    background-color: beige ;
     cursor: pointer;
 }
   
@@ -120,18 +121,17 @@
     position: fixed;
     width: 60%;
     height: 100vh;
-    top: 80px;
-    background-color: black;
+    top: 44px;
+    background-color: rgb(249, 249, 246);
     padding: 50px 0;
     transition: all 0.5s;
-    border-top: #fff 1px solid;
     right: -100%;
   }
   
   .nav__item a {
     display: block;
     font-size: 20px;
-    color: #fff;
+    color: brown;
     text-decoration: none;
     padding: 20px 0 20px 50px;
     text-transform: uppercase;

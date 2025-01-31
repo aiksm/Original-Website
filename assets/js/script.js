@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //menu bar mobile ver
 
-const hamburger = document.querySelector(".hamburger");
+const hamburger = document.querySelector(".humburger");
 const nav = document.querySelector(".nav");
 
 hamburger.addEventListener("click", () => {
